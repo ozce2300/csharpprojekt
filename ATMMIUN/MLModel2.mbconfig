@@ -1,0 +1,386 @@
+﻿{
+  "Scenario": "Classification",
+  "DataSource": {
+    "Version": 3,
+    "EscapeCharacter": "\"",
+    "ReadMultiLines": false,
+    "KeepDiacritics": false,
+    "KeepPunctuations": false,
+    "AllowQuoting": false,
+    "Type": "TabularFile",
+    "FilePath": "C:\\Users\\ozgur\\Desktop\\ATMMIUN\\ATMMIUN\\loan.txt",
+    "Delimiter": ",",
+    "DecimalMarker": ".",
+    "HasHeader": true,
+    "ColumnProperties": [
+      {
+        "ColumnName": "LoanAmount",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Income",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Age",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "IsEmployed",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "ExistingDebt",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "IsLoanApproved",
+        "ColumnPurpose": "Label",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      }
+    ]
+  },
+  "Environment": {
+    "Type": "LocalCPU",
+    "Version": 1
+  },
+  "RunHistory": {
+    "Version": 3,
+    "Type": "Result",
+    "Trials": [
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastTreeOva",
+        "Score": 0.97121603609117479,
+        "RuntimeInSeconds": 2.749,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e10",
+          "e0": {
+            "OutputColumnNames": [
+              "LoanAmount",
+              "Income",
+              "Age",
+              "IsEmployed",
+              "ExistingDebt"
+            ],
+            "InputColumnNames": [
+              "LoanAmount",
+              "Income",
+              "Age",
+              "IsEmployed",
+              "ExistingDebt"
+            ]
+          },
+          "e1": {
+            "InputColumnNames": [
+              "LoanAmount",
+              "Income",
+              "Age",
+              "IsEmployed",
+              "ExistingDebt"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e10": {
+            "OutputColumnName": "PredictedLabel",
+            "InputColumnName": "PredictedLabel"
+          },
+          "e2": {
+            "OutputColumnName": "IsLoanApproved",
+            "InputColumnName": "IsLoanApproved",
+            "AddKeyValueAnnotationsAsText": false
+          },
+          "e3": {
+            "NumberOfLeaves": 5,
+            "MinimumExampleCountPerLeaf": 23,
+            "NumberOfTrees": 7,
+            "MaximumBinCountPerFeature": 53,
+            "FeatureFraction": 0.99912882773673217,
+            "LearningRate": 0.99031335139630838,
+            "LabelColumnName": "IsLoanApproved",
+            "FeatureColumnName": "Features",
+            "DiskTranspose": false
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastTreeOva",
+        "Score": 0.97121603609117479,
+        "RuntimeInSeconds": 3.229,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e10",
+          "e0": {
+            "OutputColumnNames": [
+              "LoanAmount",
+              "Income",
+              "Age",
+              "IsEmployed",
+              "ExistingDebt"
+            ],
+            "InputColumnNames": [
+              "LoanAmount",
+              "Income",
+              "Age",
+              "IsEmployed",
+              "ExistingDebt"
+            ]
+          },
+          "e1": {
+            "InputColumnNames": [
+              "LoanAmount",
+              "Income",
+              "Age",
+              "IsEmployed",
+              "ExistingDebt"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e10": {
+            "OutputColumnName": "PredictedLabel",
+            "InputColumnName": "PredictedLabel"
+          },
+          "e2": {
+            "OutputColumnName": "IsLoanApproved",
+            "InputColumnName": "IsLoanApproved",
+            "AddKeyValueAnnotationsAsText": false
+          },
+          "e3": {
+            "NumberOfLeaves": 5,
+            "MinimumExampleCountPerLeaf": 23,
+            "NumberOfTrees": 7,
+            "MaximumBinCountPerFeature": 53,
+            "FeatureFraction": 0.9994477546400693,
+            "LearningRate": 0.988040455030219,
+            "LabelColumnName": "IsLoanApproved",
+            "FeatureColumnName": "Features",
+            "DiskTranspose": false
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastTreeOva",
+        "Score": 0.97121603609117479,
+        "RuntimeInSeconds": 5.742,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e10",
+          "e0": {
+            "OutputColumnNames": [
+              "LoanAmount",
+              "Income",
+              "Age",
+              "IsEmployed",
+              "ExistingDebt"
+            ],
+            "InputColumnNames": [
+              "LoanAmount",
+              "Income",
+              "Age",
+              "IsEmployed",
+              "ExistingDebt"
+            ]
+          },
+          "e1": {
+            "InputColumnNames": [
+              "LoanAmount",
+              "Income",
+              "Age",
+              "IsEmployed",
+              "ExistingDebt"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e10": {
+            "OutputColumnName": "PredictedLabel",
+            "InputColumnName": "PredictedLabel"
+          },
+          "e2": {
+            "OutputColumnName": "IsLoanApproved",
+            "InputColumnName": "IsLoanApproved",
+            "AddKeyValueAnnotationsAsText": false
+          },
+          "e3": {
+            "NumberOfLeaves": 5,
+            "MinimumExampleCountPerLeaf": 23,
+            "NumberOfTrees": 7,
+            "MaximumBinCountPerFeature": 52,
+            "FeatureFraction": 0.99913266105831577,
+            "LearningRate": 0.98803017786803615,
+            "LabelColumnName": "IsLoanApproved",
+            "FeatureColumnName": "Features",
+            "DiskTranspose": false
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastTreeOva",
+        "Score": 0.96396017138850154,
+        "RuntimeInSeconds": 3.058,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e10",
+          "e0": {
+            "OutputColumnNames": [
+              "LoanAmount",
+              "Income",
+              "Age",
+              "IsEmployed",
+              "ExistingDebt"
+            ],
+            "InputColumnNames": [
+              "LoanAmount",
+              "Income",
+              "Age",
+              "IsEmployed",
+              "ExistingDebt"
+            ]
+          },
+          "e1": {
+            "InputColumnNames": [
+              "LoanAmount",
+              "Income",
+              "Age",
+              "IsEmployed",
+              "ExistingDebt"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e10": {
+            "OutputColumnName": "PredictedLabel",
+            "InputColumnName": "PredictedLabel"
+          },
+          "e2": {
+            "OutputColumnName": "IsLoanApproved",
+            "InputColumnName": "IsLoanApproved",
+            "AddKeyValueAnnotationsAsText": false
+          },
+          "e3": {
+            "NumberOfLeaves": 5,
+            "MinimumExampleCountPerLeaf": 21,
+            "NumberOfTrees": 6,
+            "MaximumBinCountPerFeature": 52,
+            "FeatureFraction": 0.99999999,
+            "LearningRate": 0.8191772141154553,
+            "LabelColumnName": "IsLoanApproved",
+            "FeatureColumnName": "Features",
+            "DiskTranspose": false
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastTreeOva",
+        "Score": 0.96364081442050364,
+        "RuntimeInSeconds": 1.841,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e10",
+          "e0": {
+            "OutputColumnNames": [
+              "LoanAmount",
+              "Income",
+              "Age",
+              "IsEmployed",
+              "ExistingDebt"
+            ],
+            "InputColumnNames": [
+              "LoanAmount",
+              "Income",
+              "Age",
+              "IsEmployed",
+              "ExistingDebt"
+            ]
+          },
+          "e1": {
+            "InputColumnNames": [
+              "LoanAmount",
+              "Income",
+              "Age",
+              "IsEmployed",
+              "ExistingDebt"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e10": {
+            "OutputColumnName": "PredictedLabel",
+            "InputColumnName": "PredictedLabel"
+          },
+          "e2": {
+            "OutputColumnName": "IsLoanApproved",
+            "InputColumnName": "IsLoanApproved",
+            "AddKeyValueAnnotationsAsText": false
+          },
+          "e3": {
+            "NumberOfLeaves": 5,
+            "MinimumExampleCountPerLeaf": 24,
+            "NumberOfTrees": 7,
+            "MaximumBinCountPerFeature": 49,
+            "FeatureFraction": 0.99999999,
+            "LearningRate": 0.58728919149979064,
+            "LabelColumnName": "IsLoanApproved",
+            "FeatureColumnName": "Features",
+            "DiskTranspose": false
+          }
+        }
+      }
+    ],
+    "Estimators": {
+      "e0": "ReplaceMissingValues",
+      "e1": "Concatenate",
+      "e2": "MapValueToKey",
+      "e3": "FastTreeOva",
+      "e4": "FastForestOva",
+      "e5": "LightGbmMulti",
+      "e6": "LbfgsLogisticRegressionOva",
+      "e7": "LbfgsMaximumEntropyMulti",
+      "e8": "SdcaMaximumEntropyMulti",
+      "e9": "SdcaLogisticRegressionOva",
+      "e10": "MapKeyToValue"
+    },
+    "Schema": "e0 * e1 * e2 * (e3 + e4 + e5 + e6 + e7 + e8 + e9) * e10",
+    "MetricName": "MacroAccuracy",
+    "ModelFilePath": "C:\\Users\\ozgur\\Desktop\\ATMMIUN\\ATMMIUN\\MLModel2.mlnet"
+  },
+  "Type": "TrainingConfig",
+  "Version": 5,
+  "TrainingOption": {
+    "Version": 2,
+    "Subsampling": false,
+    "Type": "ClassificationTrainingOption",
+    "TrainingTime": 1000,
+    "LabelColumn": "IsLoanApproved",
+    "ValidationOption": {
+      "Version": 0,
+      "Type": "CrossValidationValidationOption",
+      "NumberOfFolds": 5
+    }
+  }
+}

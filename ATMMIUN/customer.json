@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Mikael",
+    "CardNr": 1234,
+    "Password": 4321,
+    "Saldo": 2000
+  },
+
+  {
+    "Name": "Erika",
+    "CardNr": 5678,
+    "Password": 8765,
+    "Saldo": 1000
+  }
+]
