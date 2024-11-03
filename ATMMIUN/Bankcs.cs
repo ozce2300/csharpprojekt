@@ -80,13 +80,13 @@ namespace ATMMIUN
                     Console.CursorVisible = true;
                     Console.Clear();
                     Console.WriteLine("Skriv in din ålder: ");
-                    if (float.TryParse(Console.ReadLine(), out age) && age >= 18 && age <= 80)
+                    if (float.TryParse(Console.ReadLine(), out age) && age >= 18 && age <= 65)
                     {
                         break; // Avsluta loopen om inmatningen är giltig
                     }
                     Console.WriteLine();
                     Console.ForegroundColor= ConsoleColor.Red;
-                    Console.WriteLine("Ogiltig inmatning. Vänligen ange en giltig ålder (0-120).");
+                    Console.WriteLine("Ogiltig inmatning. Vänligen ange en giltig ålder (18-80).");
                     Console.WriteLine();
                     Console.ForegroundColor = ConsoleColor.White;
                     Console.Write("Tryck enter för att skriva in lånebeloppet du vill låna...");
@@ -135,7 +135,7 @@ namespace ATMMIUN
                     }
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine();
-                    Console.WriteLine("Ogiltig inmatning. Vänligen ange ett icke-negativt belopp.");
+                    Console.WriteLine("Ogiltig inmatning. Testa igen");
                     Console.WriteLine();
                     Console.ForegroundColor = ConsoleColor.White;
                     Console.Write("Tryck enter för att skriva in lånebeloppet du vill låna...");
