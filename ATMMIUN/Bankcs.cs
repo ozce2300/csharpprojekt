@@ -86,7 +86,7 @@ namespace ATMMIUN
                     }
                     Console.WriteLine();
                     Console.ForegroundColor= ConsoleColor.Red;
-                    Console.WriteLine("Ogiltig inmatning. Vänligen ange en giltig ålder (18-80).");
+                    Console.WriteLine("Ogiltig inmatning. Vänligen ange en giltig ålder (18-65).");
                     Console.WriteLine();
                     Console.ForegroundColor = ConsoleColor.White;
                     Console.Write("Tryck enter för att skriva in lånebeloppet du vill låna...");
